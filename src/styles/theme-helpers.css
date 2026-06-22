@@ -1,0 +1,16 @@
+:root[data-theme='light'] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #eef2ff;
+  --bg-card: rgba(255, 255, 255, 0.8);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --accent-blue: #0ea5e9;
+  --accent-purple: #8b5cf6;
+  --accent-teal: #14b8a6;
+  --shadow-glow-blue: 0 0 24px rgba(56, 189, 248, 0.15);
+  --shadow-glow-purple: 0 0 24px rgba(139, 92, 246, 0.12);
+}
+
+body[data-theme='light'] {
+  background: linear-gradient(135deg, #f8fafc, #eef2ff, #ecfeff);
+}

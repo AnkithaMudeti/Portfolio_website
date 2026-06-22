@@ -1,0 +1,18 @@
+
+> ankitha-portfolio@0.0.0 build
+> vite build
+
+[36mvite v7.3.5 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[39m 551 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                               [39m[1m[2m    2.02 kB[22m[1m[22m[2m │ gzip:   0.69 kB[22m
+[2mdist/[22m[32massets/fraud-detection-DiVLTsTk.png      [39m[1m[2m1,266.91 kB[22m[1m[22m
+[2mdist/[22m[32massets/criminal-behavior-C6ytb0X3.png    [39m[1m[2m1,358.86 kB[22m[1m[22m
+[2mdist/[22m[32massets/campus-lost-found-BqFKZrF9.png    [39m[1m[2m1,436.05 kB[22m[1m[22m
+[2mdist/[22m[32massets/rock-paper-scissors-B0yA37Sx.png  [39m[1m[2m1,552.49 kB[22m[1m[22m
+[2mdist/[22m[32massets/profile-QJun-h5i.png              [39m[1m[2m1,724.53 kB[22m[1m[22m
+[2mdist/[22m[35massets/index-DIy9wZ7a.css                [39m[1m[2m   51.64 kB[22m[1m[22m[2m │ gzip:   8.71 kB[22m
+[2mdist/[22m[36massets/index-CZddeyNl.js                 [39m[1m[2m  466.30 kB[22m[1m[22m[2m │ gzip: 150.64 kB[22m
+[32m✓ built in 3.65s[39m

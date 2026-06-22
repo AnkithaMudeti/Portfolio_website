@@ -1,0 +1,230 @@
+.particles-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  top: var(--top);
+  left: var(--left);
+  border-radius: 50%;
+  opacity: var(--opacity);
+  filter: blur(1.25px);
+  background: radial-gradient(circle, var(--color) 0%, transparent 72%);
+  animation: float var(--duration) ease-in-out infinite alternate;
+  animation-delay: var(--delay);
+  will-change: transform, opacity;
+}
+
+@keyframes float {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(calc(var(--drift-x) * 1px), calc(var(--drift-y) * 1px), 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.particle:nth-child(1) {
+  --top: 8%;
+  --left: 14%;
+  --size: 22px;
+  --opacity: 0.12;
+  --color: var(--accent-blue);
+  --duration: 38s;
+  --delay: -2s;
+  --drift-x: 24;
+  --drift-y: -10;
+}
+
+.particle:nth-child(2) {
+  --top: 26%;
+  --left: 78%;
+  --size: 16px;
+  --opacity: 0.1;
+  --color: var(--accent-purple);
+  --duration: 28s;
+  --delay: -6s;
+  --drift-x: -18;
+  --drift-y: 12;
+}
+
+.particle:nth-child(3) {
+  --top: 54%;
+  --left: 20%;
+  --size: 24px;
+  --opacity: 0.14;
+  --color: var(--accent-teal);
+  --duration: 40s;
+  --delay: -12s;
+  --drift-x: 20;
+  --drift-y: 18;
+}
+
+.particle:nth-child(4) {
+  --top: 72%;
+  --left: 40%;
+  --size: 12px;
+  --opacity: 0.08;
+  --color: var(--accent-blue);
+  --duration: 32s;
+  --delay: -4s;
+  --drift-x: -16;
+  --drift-y: 22;
+}
+
+.particle:nth-child(5) {
+  --top: 18%;
+  --left: 48%;
+  --size: 20px;
+  --opacity: 0.11;
+  --color: var(--accent-purple);
+  --duration: 34s;
+  --delay: -9s;
+  --drift-x: 16;
+  --drift-y: -18;
+}
+
+.particle:nth-child(6) {
+  --top: 62%;
+  --left: 86%;
+  --size: 14px;
+  --opacity: 0.1;
+  --color: var(--accent-teal);
+  --duration: 26s;
+  --delay: -15s;
+  --drift-x: -14;
+  --drift-y: -20;
+}
+
+.particle:nth-child(7) {
+  --top: 42%;
+  --left: 64%;
+  --size: 18px;
+  --opacity: 0.13;
+  --color: var(--accent-blue);
+  --duration: 36s;
+  --delay: -3s;
+  --drift-x: 14;
+  --drift-y: 24;
+}
+
+.particle:nth-child(8) {
+  --top: 88%;
+  --left: 24%;
+  --size: 10px;
+  --opacity: 0.09;
+  --color: var(--accent-purple);
+  --duration: 30s;
+  --delay: -10s;
+  --drift-x: 18;
+  --drift-y: -14;
+}
+
+.particle:nth-child(9) {
+  --top: 6%;
+  --left: 58%;
+  --size: 20px;
+  --opacity: 0.12;
+  --color: var(--accent-teal);
+  --duration: 38s;
+  --delay: -7s;
+  --drift-x: -22;
+  --drift-y: 16;
+}
+
+.particle:nth-child(10) {
+  --top: 34%;
+  --left: 4%;
+  --size: 16px;
+  --opacity: 0.1;
+  --color: var(--accent-purple);
+  --duration: 24s;
+  --delay: -5s;
+  --drift-x: 20;
+  --drift-y: 10;
+}
+
+.particle:nth-child(11) {
+  --top: 56%;
+  --left: 92%;
+  --size: 12px;
+  --opacity: 0.08;
+  --color: var(--accent-blue);
+  --duration: 35s;
+  --delay: -13s;
+  --drift-x: -24;
+  --drift-y: -12;
+}
+
+.particle:nth-child(12) {
+  --top: 78%;
+  --left: 56%;
+  --size: 22px;
+  --opacity: 0.15;
+  --color: var(--accent-teal);
+  --duration: 40s;
+  --delay: -19s;
+  --drift-x: 12;
+  --drift-y: -22;
+}
+
+.particle:nth-child(13) {
+  --top: 48%;
+  --left: 32%;
+  --size: 14px;
+  --opacity: 0.1;
+  --color: var(--accent-blue);
+  --duration: 28s;
+  --delay: -8s;
+  --drift-x: -18;
+  --drift-y: 18;
+}
+
+.particle:nth-child(14) {
+  --top: 10%;
+  --left: 84%;
+  --size: 18px;
+  --opacity: 0.13;
+  --color: var(--accent-purple);
+  --duration: 30s;
+  --delay: -11s;
+  --drift-x: 22;
+  --drift-y: 14;
+}
+
+.particle:nth-child(15) {
+  --top: 70%;
+  --left: 12%;
+  --size: 18px;
+  --opacity: 0.1;
+  --color: var(--accent-teal);
+  --duration: 26s;
+  --delay: -16s;
+  --drift-x: -16;
+  --drift-y: -18;
+}
+
+@media (max-width: 720px) {
+  .particle {
+    filter: blur(1px);
+  }
+
+  .particle:nth-child(1),
+  .particle:nth-child(3),
+  .particle:nth-child(5),
+  .particle:nth-child(7),
+  .particle:nth-child(9),
+  .particle:nth-child(12),
+  .particle:nth-child(14) {
+    --size: calc(var(--size) * 0.85);
+  }
+}
