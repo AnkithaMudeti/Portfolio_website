@@ -1,10 +1,10 @@
 import { memo } from 'react';
-import Navbar from '../components/Navbar/Navbar';
-import Footer from '../components/Footer/Footer';
-import ScrollProgress from '../components/ScrollProgress/ScrollProgress';
-import BackToTop from '../components/BackToTop/BackToTop';
-import Particles from '../components/Particles/Particles';
-import ThemeToggle from '../components/ThemeToggle/ThemeToggle';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
+import ScrollProgress from '../ScrollProgress/ScrollProgress';
+import BackToTop from '../BackToTop/BackToTop';
+import Particles from '../Particles/Particles';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 function MainLayout({ children }) {
   return (
