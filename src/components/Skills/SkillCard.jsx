@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { motion as Motion } from 'framer-motion';
 import SkillIcon from './SkillIcon';
 import SkillBadge from './SkillBadge';

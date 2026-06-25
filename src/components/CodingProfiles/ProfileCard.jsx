@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { motion as Motion } from 'framer-motion';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiHackerrank, SiCodechef } from 'react-icons/si';

@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { memo, useRef } from 'react';
 import { motion as Motion, useInView } from 'framer-motion';
 import CountUp from 'react-countup';
 

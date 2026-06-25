@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { FaJava, FaAws, FaGithub } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa6';
 import { SiSpringboot, SiMysql } from 'react-icons/si';

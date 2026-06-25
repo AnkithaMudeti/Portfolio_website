@@ -1,4 +1,4 @@
-import { memo, useMemo } from 'react';
+import { memo } from 'react';
 import { motion as Motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { Element, Link } from 'react-scroll';
@@ -65,17 +65,17 @@ function Hero() {
               className="hero__content"
               initial="hidden"
               animate="visible"
-              variants={contentVariants}
+              variants={CONTENT_VARIANTS}
             >
-              <Motion.p className="hero__greeting" variants={fadeSlideLeft}>
+              <Motion.p className="hero__greeting" variants={FADE_SLIDE_LEFT}>
                 Hello, I&apos;m
               </Motion.p>
 
-              <Motion.h1 className="hero__name gradient-text" variants={fadeSlideLeft}>
+              <Motion.h1 className="hero__name gradient-text" variants={FADE_SLIDE_LEFT}>
                 Mudeti Ankitha
               </Motion.h1>
 
-              <Motion.div className="hero__typing" variants={fadeSlideLeft}>
+              <Motion.div className="hero__typing" variants={FADE_SLIDE_LEFT}>
                 <TypeAnimation
                   sequence={typingSequence}
                   wrapper="span"
